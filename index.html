@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TLC</title>
+<title>TLC Infinity | Home page</title>
+<meta content="Content Solutions, Leadership & HRD, Healthcare,Skill Development, " name="keywords">
+<meta content="At TLC INFINITY, we are a group of highly experienced professionals from disparate fields who have come together with a common cause to HAND HOLD, OFFER SOLUTIONS, CREATE VALUE and STEER YOUR BUSINESS INTO THE FUTURE with confidence and optimism.r" name="description">
 <link href="images/favicon.png" rel="icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
 <header>
   <div class="container">
     <div class="header">
-    <div class="logo"> <a href="index.html"><img alt="" src="images/logo.png"></a> </div>
+    <div class="logo"> <a href="index.html"><img alt="Logo" src="images/logo.png"></a> </div>
     <span class="MenuBtn" onclick="openNav()"><i></i><i></i><i></i></span>
     <nav id="mySidenav" class="sidenav">
       <ul>
@@ -52,7 +53,7 @@
             <div class="slider-bg">
               <img src="images/slider2_bg.png">
               <div class="animated-area">
-                <h2 class="slider-title"> Your one-stop solution to solve all your Content Problems</h2>
+                <h2 class="slider-title"> Content Solutions and Strategy</h2>
                 <a href="#ContentSolutions" class="slider-buttton page-scroll">Know More</a>
               </div>
             </div>
@@ -327,6 +328,8 @@
       </div>
   </div>
 </footer>
+<a href="#" class="scrollToTop"><i></i></a> 
+
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/jquery.min.js"></script> 
 <script>
@@ -373,7 +376,31 @@
                 }
             });
         });
+
+
 		
+    </script>
+    <script>
+      $(document).ready(function(){
+	"use strict";
+  var offSetTop = 100;
+  var $scrollToTopButton = $('.scrollToTop');
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > offSetTop) {
+			$scrollToTopButton.fadeIn();
+		} else {
+			$scrollToTopButton.fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$scrollToTopButton.click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
     </script>
         <script>
           $('ul.tabs li').click(function() {
