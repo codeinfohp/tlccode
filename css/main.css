@@ -25,16 +25,9 @@ section{padding: 30px 0;}
 
 .scrollToTop {position: fixed;display: none;background: #000000;color: #000;width: 40px;height: 40px;text-align: center;line-height: 1;font-size: 16px;right: 40px;bottom: 40px;transition: all 0.4s;z-index: 11;border-radius: 5px; }
 .scrollToTop i {position: relative;}
-.scrollToTop i:after{content: '';
-    border: solid #fff;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 6px;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    position: absolute;
-    right: -8px;
-    top: 18px;}
+.scrollToTop i:after{border-bottom-style: solid;border-bottom-width: 3px;border-right-style: solid;border-right-width: 3px;
+    content: "";display: inline-block;height: 12px;width: 12px;border-color: #fff;-moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);-webkit-transform: rotate(225deg);transform: rotate(225deg);margin-top: 18px;}
 
 .main_Col{padding-top: 75px;}
 .slider-wrapper .swiper-slide {min-height: 600px;text-align: center;}
@@ -66,11 +59,11 @@ section{padding: 30px 0;}
 .aboutus .abt_det{text-align: center;}
 .aboutus .abt_det p{font-size: 20px; line-height: 30px; font-weight: 400;}
 .aboutus .abt_cate{display: flex; justify-content: space-between; align-items: center;}
-.aboutus .abt_cate figure{margin:0 3%;}
+.aboutus .abt_cate figure{margin: 0 2%;width: 29.33%;}
 .aboutus .abt_cate figure .icon-box{text-align: center;border: 1px solid #ededed;padding:30px;transition: all ease-in-out 0.3s; border-radius: 6px;box-shadow: 0 0 10px 0 rgb(9,75,216,.2);}
 .aboutus .abt_cate figure .icon-box .icon {margin: 0 auto;width: 64px;height: 64px;border-radius: 5px;transition: all 0.3s ease-out 0s;display: flex;align-items: center;justify-content: center;margin-bottom: 20px;transform-style: preserve-3d;}
-.aboutus .abt_cate figure .icon-box h4 {font-weight: 400;margin-bottom: 15px;font-size: 25px;text-transform: uppercase;text-decoration: underline;}
-.aboutus .abt_cate figure .icon-box p {line-height: 26px;font-size: 18px;}
+.aboutus .abt_cate figure .icon-box h4 {font-weight: 400;margin-bottom: 15px;font-size: 20px;text-transform: uppercase;text-decoration: underline;}
+.aboutus .abt_cate figure .icon-box p {line-height: 26px;font-size: 17px;height: 104px;}
 .aboutus .abt_cate figure .icon-box .readMore{font-size: 18px; font-weight: 500; text-decoration: underline; }
 .aboutus .abt_cate figure .icon-box .readMore:after{content: "\00BB";font-size: 20px;}
 
@@ -166,11 +159,12 @@ nav ul li.active a{border-bottom: 0;}
 .slider-wrapper .animated-area{left: 34px;top: 80px;}
 .slider-wrapper .slider-title{font-size: 40px; line-height: 48px;}
 .slider-wrapper .slider-summary{font-size: 18px;}
-.tagline .icon{margin-right: 0;}
+.tagline .icon{margin-right: 0;width: 106px;height: 120px;}
 .tagline .icon img{width: 100%;height: 120px;}
 .tagline{flex-wrap: wrap;width: 100%;padding: 20px 10px;}
 .tagline span{font-size: 24px;text-align: center;line-height: 34px;}
-.aboutus .abt_cate figure{margin:10px 0;}
+.aboutus .abt_cate figure{margin:10px 0;width: 100%;}
+.aboutus .abt_cate figure .icon-box p{font-size: 18px; height:120px;}
 .leaderHRD .leaderHRD_points{flex-wrap: wrap;}
 .leaderHRD .lftCol, .leaderHRD .rgtCol{width: 100%;}
 .leaderHRD .rgtCol{padding:20px;}
@@ -183,7 +177,7 @@ nav ul li.active a{border-bottom: 0;}
 .contentsolutions .content_points .rgtCol img{padding: 25px;}
 .services .health_category figure{width: 100%;}
 .aboutus .abt_cate{flex-wrap: wrap;}
-.healthcare .health_category{padding:0 20px;}
+.healthcare .health_category{padding:0 10px;}
 .healthcare .health_category figure{width: 100%;}
 ul.tabs{display: inherit;}
 ul.tabs li{margin-right: 0; width: 100%; margin-bottom: 10px; text-align: center;}
