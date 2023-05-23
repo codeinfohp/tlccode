@@ -264,7 +264,7 @@
       </ul>
        <div class="tabs_container">
           <div class="tab_content active" data-tab="tab1">
-              <p>Our Media Specialist is a seasoned journalist with over 26 years of experience in leading media organisations. She has set up newsrooms with the most prominent and largest media brands of the country. She has done extensive field reporting, lead newsroom operations and strategized Digital Growth that is used as a case study and benchmark for the industry. She has also part-written and fully edited a coffee-table book with the Foreword by APJ Abdul Kalam and released by the then President, Hon’ble Smt. Pratibha Devisingh Patil, at the Rashtrapati Bhawan. </p>
+              <p>Our Media Specialist is a seasoned journalists with over 26 years of experience in leading media organisations. She has set up newsrooms with the most prominent and largest media brands of the country. She has do    ne extensive field reporting, lead newsroom operations and strategized Digital Growth that is used as a case study and benchmark for the industry. She has also part written and fully edited a coffee-table book with the Foreword by APJ Abdul Kalam and released by the then President, Hon’ble Smt. Pratibha Devisingh Patil, at the Rashtrapati Bhawan. </p>
               <p>She has written hundreds of articles in her career which have been cited in books, journals, by state governments, Shakespeare Oxford Fellowship Society, foreign media companies, defence, and national security journals and pertinently in a White Paper in Parliament. Her work on women’s issues has been included as a chapter in a German textbook for English teachers. </p>
               <p>She is backed by a huge team of writers, video editors and cameramen who have worked in major media houses of India.</p>
            </div>
@@ -310,7 +310,6 @@
       <div class="copyright">
         <p>Copyright © 2023-TLC infinity all rights reserved</p>
       </div>
-      <div class="contact_details">
       <div class="contactus">
           <figure>
             <h4>CONTACT US ON</h4>  
@@ -329,54 +328,6 @@
             <span>Healthcare</span>
           </figure>
       </div>
-      <div class="contactus_form" >
-        <form name="submit-to-google-sheet">
-          <div class="form-group">
-            <input type="text" name="Name" autocomplete="off" class="form-control" id="name" placeholder="Name*"  required/>
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="Email" autocomplete="off" id="email" placeholder="Email* " required />
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="Phone" autocomplete="off" id="phone" placeholder="Phone"/>
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="Message" rows="3" autocomplete="off" placeholder="Message"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="text-center">
-            <input type="submit" name="Send Message" id="Send" placeholder="Send Message"  required/>
-          </div>
-          <div class="text-center">
-            <span class="thanksmsg" id="msg"></span>
-          </div>
-        </form>
-      </div>
-    </div> 
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfO9CSPXMsfotvC7vnzGFKlpcdU8and0u2b1D6f5OwaKdh2sYpRRYdQHJMp7IOJvFj/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          alert('Your Message has been sent successfully!');
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-              msg.innerHTML = "Thanks for your message!"
-              setTimeout(function(){
-                msg.innerHTML  = ""
-
-              }, 5000)
-              form.reset()
-
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
   </div>
 </footer>
 <a href="#" class="scrollToTop"><i></i></a> 

@@ -120,15 +120,31 @@ ul.tabs li.active{background-color: #000000;font-weight: 400;position: relative;
 .footer .foot_links ul li a{color: #fff;font-size: 16px;line-height: 22px;}
 .footer .copyright{text-align: center;}
 .footer .copyright p{font-size: 12px; line-height: 18px; color: #fff;text-transform: capitalize;}
-.contactus{display: flex; align-items: center; justify-content: center;}
+.contact_details{display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
+.contact_details .contactus,.contact_details .contactus_form{width: 50%;}
+.contactus{display: flex; align-items: center; justify-content: center;flex-wrap: wrap;}
 .contactus figure{text-align: left;margin-right: 25px;padding-right: 25px;border-right: 1px solid #3e3e3e;}
 .contactus figure:last-child{border-right: 0; padding-right: 0; margin-right: 0;}
-.contactus figure h4{color: #39ae41;font-size: 20px;line-height: 26px;padding-bottom: 8px;font-weight: 400;}
+.contactus figure h4{color: #39ae41;font-size: 22px;line-height: 28px;padding-bottom: 8px;font-weight: 400;}
 .contactus figure h4 a{color: #39ae41;}
 .contactus figure span{font-size: 17px;color: #fff;font-weight: 400;line-height: 26px;}
-.contactus figure:first-child h4{font-size: 16px;font-weight: 400;line-height: 22px;letter-spacing: 6px;text-transform: uppercase;position: relative;}
-.contactus figure:first-child h4:before{content: url(../images/whatsapp_icon.png);position: absolute;left: -38px;top: 0;height: 30px;width: 30px;}
-.contactus figure:first-child span{font-family: 'Oswald', sans-serif;font-size: 38px;line-height: 22px;font-weight: 700;text-transform: uppercase;color: #39ae41;}
+.contactus figure:first-child{width: 100%;border-right: 0; margin-right: 0; padding-right: 0;text-align: center; margin-bottom: 30px;}
+.contactus figure:first-child h4{font-size: 20px;font-weight: 400;line-height: 26px;letter-spacing: 6px;text-transform: uppercase;position: relative;}
+.contactus figure:first-child h4:before{content: url(../images/whatsapp_icon.png);position: absolute;left: 180px;top: 0;height: 30px;width: 30px;}
+.contactus figure:first-child span{font-family: 'Oswald', sans-serif;font-size: 44px;line-height: 30px;font-weight: 700;text-transform: uppercase;color: #39ae41;}
+
+.contactus_form{padding: 0 50px;}
+.contactus_form .form-group{margin-bottom: 20px;}
+.contactus_form  .sent-message {display: none;color: #fff;background: #18d26e;text-align: center;padding: 15px;font-weight: 600;}
+.contactus_form  input, .contactus_form  textarea {border-radius: 0;box-shadow: none;font-size: 14px;width: 100%;}
+.contactus_form  input::focus, .contactus_form  textarea::focus {background-color: #f00;}
+.contactus_form  input {padding: 15px 15px;background: #f7f7f7;border: transparent;border-radius: 5px;font-size: 12px;text-transform: uppercase;letter-spacing: 3px;}
+.contactus_form  textarea {padding: 12px 15px;background: #f7f7f7;border: transparent;border-radius: 5px;font-size: 12px;text-transform: uppercase;letter-spacing: 3px;}
+.contactus_form  input[type="submit"] {background: #f00;border: 0;border-radius: 10px;padding: 15px 30px;border: 1px solid #f00;color: #fff;transition: 0.3s;}
+.contactus_form  input[type="submit"]:hover {background: #000;cursor: pointer;color: #fff; border: 1px solid #fff;}
+@-webkit-keyframes animate-loading {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+@keyframes animate-loading {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+.contactus_form .thanksmsg{padding: 10px 0; text-align: center; color:#f00; font-weight: 600; display: block; font-style: italic;}
 
 @media (max-width:767px){
 header{border-bottom:1px solid #fff;}
@@ -185,10 +201,12 @@ ul.tabs li{margin-right: 0; width: 100%; margin-bottom: 10px; text-align: center
 
 .footer .foot_links ul{flex-wrap: wrap;}
 .footer .foot_links ul li a{padding: 6px 0;display: inline-block;}
+.contact_details .contactus, .contact_details .contactus_form{width: 100%;}
 .contactus{flex-wrap: wrap;}
 .contactus figure{margin-bottom: 15px;text-align: center;margin-right: 0;border-right: 0;}
 .contactus figure:first-child{margin-right: 0; padding-right: 0;width: 100%;}
-.contactus figure:first-child h4:before{left: 38px;}
+.contactus figure:first-child h4:before{left: 30px;}
+.contactus_form{padding: 0 0 30px 0;}
 
 
 }
