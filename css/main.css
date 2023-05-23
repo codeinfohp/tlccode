@@ -144,7 +144,7 @@ ul.tabs li.active{background-color: #000000;font-weight: 400;position: relative;
 .contactus_form  input[type="submit"]:hover {background: #000;cursor: pointer;color: #fff; border: 1px solid #fff;}
 @-webkit-keyframes animate-loading {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
 @keyframes animate-loading {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
-.contactus_form .thanksmsg{padding: 10px 0; text-align: center; color:#f00; font-weight: 600; display: block; font-style: italic;}
+.contactus_form .thanksmsg{padding: 10px 0; text-align: center; color:#fff; font-weight: 500; display: block; font-style: italic;}
 
 @media (max-width:767px){
 header{border-bottom:1px solid #fff;}
